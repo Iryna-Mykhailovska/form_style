@@ -1,0 +1,190 @@
+@import url('./vars.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    color: var(--main-font-color);
+    background-color: var(--main-background);
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.header {
+    background-color: var(--background-btn);
+    padding: 20px 0;
+    color: #272525;
+}
+
+.main {
+    padding-top: 30px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.side {
+    background-color: #fff;
+    width: 570px;
+    padding: 35px 35px 15px 35px;
+    border-radius: var(--main-border-radius);
+}
+
+.title_2 {
+    font-size: 24px;
+    line-height: 1.333;
+    font-weight: 500;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.col_half {
+    width: 50%;
+}
+.col_full {
+    width: 100%;
+}
+.label {
+    line-height: 1.467;
+    margin-bottom: 7px;
+}
+
+input {
+    border: 1px solid #e4e4e4;
+    border-radius: var(--main-border-radius);
+    font-size: inherit;
+    height: 38px;
+    padding: 0 10px;
+
+}
+
+input:focus-visible {
+    outline: 1px solid var(--background-btn);
+}
+
+.gender_item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.385;
+    letter-spacing: -0.1px;
+    color: #969696;
+    margin-top: 7px;
+}
+
+.gender_item label {
+    display: flex;
+    align-items: center;
+}
+
+.gender_check {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 1px solid #E4E4E4;
+}
+
+.gender_check::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 5px #007BFF inset;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked ~ .gender_check::after {
+    opacity: 1;
+}
+
+.btn {
+    background: var(--background-btn);
+    color: #fff;
+    padding: 8px 10px;
+    border: 1px solid #E4E4E4;
+    border-radius: var(--main-border-radius);
+}
+
+.btn_full {
+    width: 100%;
+}
+
+.btn_min {
+    width: 25%;
+}
+
+/* .btn_full {
+    background-color: var(--background-btn);
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.467;
+    letter-spacing: -0.1px;
+    text-align: center;
+    border: none;
+    border-radius: var(--main-border-radius);
+    height: 38px;
+} */
+
+.text_policy {
+    /* font-weight: 400; */
+    width: 410px;
+    font-size: 13px;
+    line-height: 1.385;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #969696;
+}
+
+.pol {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.385;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: var(--background-btn);
+    text-decoration: none;
+}
