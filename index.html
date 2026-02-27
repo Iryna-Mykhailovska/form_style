@@ -57,8 +57,8 @@
                         <div class="row">
                             <div class="col col_half">
                                 <label for="country" class="label">Country</label>
-                                <select name="country" id="country">
-                                    <option value="">Select</option>
+                                <select name="country" id="country" class="select">
+                                    <option value="" selected disabled class="selected">Select</option>
                                     <option value="usa">United States</option>
                                     <option value="canada">Canada</option>
                                     <option value="uk">United Kingdom</option>
@@ -71,45 +71,51 @@
                         <div class="row">
                             <button class="btn btn_full">Sign Up</button>
                         </div>
-                        <div class="row">
+                        <div class="row row_policy">
                             <p class="text_policy">By clicking the 'Sign Up' button, you confirm that you accept our
-                                <br><a href="#" class="pol">Terms of Use</a>
-                                and <a href="#" class="pol">Privacy Policy</a>
+                                <br><a href="#" class="link">Terms of Use</a>
+                                and <a href="#" class="link">Privacy Policy</a>
                             </p>
+                        </div>
+                        <div class="footer_form">
+                            <p>Have an account?</p><a href="#" class="link">Log In</a>
                         </div>
                     </form>
                 </div>
                 <div class="side">
                     <h2 class="title_2">Profile</h2>
                     <form class="form">
-                        <div class="row">
+                        <div class="row row_profile">
                             <img src="./assets/img/profile.png" alt="" class="row_img">
-                            <input type="file" id="download" class="input_file">
-                            <img src="./assets/img/svg/camera.svg" alt="camera">
-                            <label for="download" class="label">Up to 1 MB (300x300 px)
+                            <div class="wrapper">
+                                <input type="file" id="file" class="hidden-input">
+                                <label for="file" class="custom-label"><img src="./assets/img/svg/camera.svg"
+                                        alt="camera" class="file_img"></label>
+                                <p class="text">Up to 1 MB (300x300 px)</p>
+                            </div>
+                            <button class="btn_delete"><img src="./assets/img/svg/delete.svg" alt=""></button>
 
-                            </label>
-                            <img src="./assets/img/svg/delete.svg" alt="">
                         </div>
                         <div class="row">
                             <div class="col col_half"><label for="name" class="label">Name</label><input type="text"
                                     id="name"></div>
-                            <div class="col col_half"> <label for="mail" class="label">E-mail</label>
-                                <input type="email" id="mail">
+                            <div class="col col_half"><label for="mail_profile" class="label">E-mail</label>
+                                <input type="email" id="mail_profile">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col col_half">
-                                <label for="country" class="label">Country</label>
-                                <select name="country" id="country">
-                                    <option value="">Select</option>
+                                <label for="country_profile" class="label" >Country</label>
+                                <select name="country_profile" id="country_profile" class="select">
+                                    <option value="" selected disabled>Select</option>
                                     <option value="usa">United States</option>
                                     <option value="canada">Canada</option>
                                     <option value="uk">United Kingdom</option>
                                 </select>
                             </div>
                             <div class="col col_half">
-                                <label for="city" class="label">City</label><input type="text" id="city">
+                                <label for="city_profile" class="label">City</label><input type="text"
+                                    id="city_profile">
                             </div>
                         </div>
                         <div class="row">
